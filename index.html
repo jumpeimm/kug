@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>kugenunacoffee</title>
+<link rel="stylesheet" href="common/reset.css">
+<link rel="stylesheet" href="common/style.css">
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+	<script>
+  (function(d) {
+    var config = {
+      kitId: 'ojo4qdb',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+</head>
+
+<body>
+		<header class="header">　
+ 
+		<div>
+        	<a href="./index.html"><img class="logo" src="./img/logo.png" alt="logo"></a>
+		</div>
+        <nav>　　
+			<div class="menu">
+				<ul class="menu-bar">　　　
+					<li><a href="./about.html">about</a></li>　　　
+					<li><a href="./menu.html">menu</a></li>　　　
+					<li><a href="./notice.html">notice</a></li>　　　
+					<li><a href="./contact.html">contact</a></li>　
+				</ul>　
+			</div>
+			
+<div class="sp-menu">			
+		<div class="cp_cont">
+			<div class="cp_offcm01">
+				<input type="checkbox" id="cp_toggle01">
+				<label for="cp_toggle01"><span></span></label>
+				<div class="cp_menu">		
+						<ul>
+							<li><a href="./about.html">about</a></li>　　　
+							<li><a href="./menu.html">menu</a></li>　　　
+							<li><a href="./notice.html">notice</a></li>　　　
+							<li><a href="./contact.html">contact</a></li>　
+						</ul>　
+				</div>
+			</div>
+			<div class="cp_contents">
+				</div>
+			</div>
+	</div>
+			
+
+
+			
+
+			
+
+
+
+        </nav>　
+		
+		<div class="title">
+			<h2 class="head-title">鵠沼でシンプルで<br class="sp-ind">美味しいコーヒーを追求</h2>
+			<p class="head-subtitle">ゆったりと寛げるアンティークな空間で味わえる。テイクアウトやご自宅でも同じ味を<br class="pc-ind">楽しめるよう本格的なメニューをご用意しています</p>
+		</div>
+		
+		
+
+		
+		
+</header>
+
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+	<script src="https://unpkg.com/scrollreveal"></script>
+	
+<script>
+ScrollReveal().reveal('.abcde', { delay: '500', distance: '50px', origin: 'bottom', duration:'2000' });
+</script>
+<script>
+$(function(){
+    var setElm = $('.loopSlider'),
+    slideSpeed = 4000;
+ 
+    setElm.each(function(){
+        var self = $(this),
+        selfWidth = self.innerWidth(),
+        findUl = self.find('ul'),
+        findLi = findUl.find('li'),
+        listWidth = findLi.outerWidth(),
+        listCount = findLi.length,
+        loopWidth = listWidth * listCount;
+ 
+        findUl.wrapAll('<div class="loopSliderWrap" />');
+        var selfWrap = self.find('.loopSliderWrap');
+ 
+        if(loopWidth > selfWidth){
+            findUl.css({width:loopWidth}).clone().appendTo(selfWrap);
+ 
+            selfWrap.css({width:loopWidth*2});
+ 
+            function loopMove(){
+                selfWrap.animate({left:'-' + (loopWidth) + 'px'},slideSpeed*listCount,'linear',function(){
+                    selfWrap.css({left:'0'});
+                    loopMove();
+                });
+            };
+            loopMove();
+ 
+            setElm.hover(function() {
+                selfWrap.pause();
+            }, function() {
+                selfWrap.resume();
+            });
+        }
+    });
+});
+</script>
+	
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="parlx.js"></script>
+	
+	<script>
+$('.parallax').Parlx({
+	item: '.background',
+	speed: '0.6'
+});</script>
+	
+
+
+
+
+	
+	
+	
+	
+	
+</body>
+</html>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
